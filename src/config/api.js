@@ -1,8 +1,8 @@
 import toast from "react-hot-toast";
 
 const API_CONFIG = {
-    AUTH_SERVICE: '/auth-api',
-    TRANSACTION_SERVICE: '/transaction-api'
+    AUTH_SERVICE: import.meta.env.VITE_REACT_APP_AUTH_SERVICE_URL,
+    TRANSACTION_SERVICE: import.meta.env.VITE_REACT_APP_TRANSACTION_SERVICE_URL
 };
 
 export const createApiClient = (baseURL) => {
